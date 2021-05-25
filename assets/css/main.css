@@ -410,26 +410,26 @@ input, select, textarea {
 		textarea:focus {
 			background: var(--hover-color);
 			border-color: var(--box-color);
-			box-shadow: 0 0 0 1px var)var(--box-color);
+			box-shadow: var(--box-color);
 		}
 
 	::-webkit-input-placeholder {
-		color:  !important;
+		color: rgba(255, 255, 255, 0.5) !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color:  !important;
+		color: rgba(255, 255, 255, 0.5) !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color:  !important;
+		color: rgba(255, 255, 255, 0.5) !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color:  !important;
+		color: rgba(255, 255, 255, 0.5) !important;
 		opacity: 1.0;
 	}
 
@@ -770,8 +770,19 @@ input, select, textarea {
 				}
 
 	.skill-icons {
-		height: 70px;
-		width: 70px;
+		height: 60px;
+		width: 60px;
+		margin: 20px 0;
+	}
+
+	@media screen and (max-width: 1680px) {
+
+		.skill-icons {
+			height: 40px;
+			width: 40px;
+			margin: 15px 0;
+		}
+
 	}
 
 
