@@ -404,6 +404,36 @@
 // ~~~~~Dark Theme~~~~~
 
 
+// var dark_icon = document.getElementById("dark-icon");
+
+// if(localStorage.getItem("theme") == null){
+//     localStorage.setItem("theme", "dark");
+// }
+
+// let localData = localStorage.getItem("theme");
+
+// if(localData == "light"){
+//     dark_icon.classList.add("fa-moon");
+//     document.body.classList.remove("dark-theme");
+// }
+// else if (localData == "dark"){
+//     dark_icon.classList.add("fa-sun");
+//     document.body.classList.add("dark-theme");
+// }
+
+// dark_icon.onclick = function() {
+//     document.body.classList.toggle("dark-theme");
+//     if(document.body.classList.contains("dark-theme")) {
+// 		dark_icon.classList.remove("fa-moon");
+//         dark_icon.classList.add("fa-sun");
+//         localStorage.setItem("theme", "dark");
+//     }else{
+// 		dark_icon.classList.remove("fa-sun");
+//         dark_icon.classList.add("fa-moon");
+//         localStorage.setItem("theme", "light");
+//     }
+// }
+
 var dark_icon = document.getElementById("dark-icon");
 
 if(localStorage.getItem("theme") == null){
@@ -413,23 +443,21 @@ if(localStorage.getItem("theme") == null){
 let localData = localStorage.getItem("theme");
 
 if(localData == "light"){
-    dark_icon.classList.add("fa-moon");
+    dark_icon.src = dark_icon.src = "assets/icons/light-off.png";
     document.body.classList.remove("dark-theme");
 }
 else if (localData == "dark"){
-    dark_icon.classList.add("fa-sun");
+    dark_icon.src = dark_icon.src = "assets/icons/light-on.png";
     document.body.classList.add("dark-theme");
 }
 
 dark_icon.onclick = function() {
     document.body.classList.toggle("dark-theme");
     if(document.body.classList.contains("dark-theme")) {
-		dark_icon.classList.remove("fa-moon");
-        dark_icon.classList.add("fa-sun");
+        dark_icon.src = "assets/icons/light-on.png"
         localStorage.setItem("theme", "dark");
     }else{
-		dark_icon.classList.remove("fa-sun");
-        dark_icon.classList.add("fa-moon");
+        dark_icon.src = "assets/icons/light-off.png"
         localStorage.setItem("theme", "light");
     }
 }

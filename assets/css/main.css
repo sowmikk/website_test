@@ -476,6 +476,19 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
+		#dark-icon {
+			padding-top: 25px;
+		}
+		
+		@media screen and (max-width: 1679px) {
+		
+			#dark-icon  {
+				height: 3.5rem;
+				padding: 15px 0 0 0;
+			}
+		}
+		
+
 /* Image */
 
 	.image {
@@ -1088,8 +1101,8 @@ input, select, textarea {
 			}
 
 		#header .logo {
-			width: 5.5rem;
-			height: 5.5rem;
+			width: 4.75rem;
+			height: 4.75rem;
 			line-height: 5.5rem;
 			border: solid 1px var(--box-color);
 			border-radius: 100%;
@@ -1456,3 +1469,6 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+
+
